@@ -9,28 +9,34 @@ import XCTest
 @testable import NewsList
 
 final class NewsListTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var newsViewModel: NewsViewModel!
+    
+    override func setUp() {
+        super.setUp()
+        let newsServiceMock = NewsServiceMock()
+        newsViewModel = NewsViewModel(newsService: newsServiceMock)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        newsViewModel = nil
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testFetchNews() {
+        // Prepare a mock response for the NewsService
+        let testNews = [News(title: "Test News", multimedia: [], author: "Test Author")]
+        newsViewModel.newsService.mockedNews = testNews
+        
+        let expectation = XCTestExpectation(description: "Fetch news data")
+        
+        newsViewModel.fetchNews {
+            XCTAssertEqual(self.newsViewModel.news.count, 1, "News count should be 1")
+            XCTAssertEqual(self.newsViewModel.news[0].title, "Test News", "News title should match")
+            XCTAssertEqual(self.newsViewModel.news[0].author, "Test Author", "News author should match")
+            
+            expectation.fulfill()
         }
+        
+        wait(for: [expectation], timeout: 5.0)
     }
-
 }
