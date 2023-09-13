@@ -2,7 +2,7 @@
 //  InfiniteScrollUITests.swift
 //  InfiniteScrollUITests
 //
-//  Created by Bose, Karthikeyan (Cognizant) on 12/09/23.
+//  Created by Karthikeyan 
 //
 
 import XCTest

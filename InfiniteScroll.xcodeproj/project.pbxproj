@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC5B2BAA2AB18AF20035AF67 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B2BA92AB18AF20035AF67 /* LoadingTableViewCell.swift */; };
+		CC5B2BAE2AB195000035AF67 /* VideoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B2BAD2AB195000035AF67 /* VideoViewModelTests.swift */; };
 		CCD09EAC2AB0D244006AA0BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09EAB2AB0D244006AA0BF /* AppDelegate.swift */; };
 		CCD09EAE2AB0D244006AA0BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09EAD2AB0D244006AA0BF /* SceneDelegate.swift */; };
-		CCD09EB02AB0D244006AA0BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09EAF2AB0D244006AA0BF /* ViewController.swift */; };
 		CCD09EB32AB0D244006AA0BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD09EB12AB0D244006AA0BF /* Main.storyboard */; };
 		CCD09EB52AB0D248006AA0BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD09EB42AB0D248006AA0BF /* Assets.xcassets */; };
 		CCD09EB82AB0D248006AA0BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD09EB62AB0D248006AA0BF /* LaunchScreen.storyboard */; };
 		CCD09EC32AB0D248006AA0BF /* InfiniteScrollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09EC22AB0D248006AA0BF /* InfiniteScrollTests.swift */; };
 		CCD09ECD2AB0D248006AA0BF /* InfiniteScrollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09ECC2AB0D248006AA0BF /* InfiniteScrollUITests.swift */; };
 		CCD09ECF2AB0D248006AA0BF /* InfiniteScrollUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09ECE2AB0D248006AA0BF /* InfiniteScrollUITestsLaunchTests.swift */; };
+		CCD09EE02AB0D36C006AA0BF /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09EDF2AB0D36C006AA0BF /* VideoListViewController.swift */; };
+		CCD09EE22AB0D416006AA0BF /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09EE12AB0D416006AA0BF /* Video.swift */; };
+		CCD09EE42AB0D4BA006AA0BF /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09EE32AB0D4BA006AA0BF /* VideoViewModel.swift */; };
+		CCD09EE72AB0D6E7006AA0BF /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09EE62AB0D6E7006AA0BF /* VideoTableViewCell.swift */; };
+		CCD09EE92AB0DC98006AA0BF /* VideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09EE82AB0DC98006AA0BF /* VideoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC5B2BA92AB18AF20035AF67 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
+		CC5B2BAD2AB195000035AF67 /* VideoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModelTests.swift; sourceTree = "<group>"; };
 		CCD09EA82AB0D244006AA0BF /* InfiniteScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD09EAB2AB0D244006AA0BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD09EAD2AB0D244006AA0BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCD09EAF2AB0D244006AA0BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CCD09EB22AB0D244006AA0BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCD09EB42AB0D248006AA0BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCD09EB72AB0D248006AA0BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		CCD09EC82AB0D248006AA0BF /* InfiniteScrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteScrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD09ECC2AB0D248006AA0BF /* InfiniteScrollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollUITests.swift; sourceTree = "<group>"; };
 		CCD09ECE2AB0D248006AA0BF /* InfiniteScrollUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CCD09EDF2AB0D36C006AA0BF /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
+		CCD09EE12AB0D416006AA0BF /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		CCD09EE32AB0D4BA006AA0BF /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		CCD09EE62AB0D6E7006AA0BF /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		CCD09EE82AB0DC98006AA0BF /* VideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,13 @@
 		CCD09EAA2AB0D244006AA0BF /* InfiniteScroll */ = {
 			isa = PBXGroup;
 			children = (
+				CCD09EDB2AB0D25A006AA0BF /* ViewController */,
+				CCD09EE52AB0D4D3006AA0BF /* ViewModel */,
+				CCD09EDC2AB0D299006AA0BF /* Views */,
+				CCD09EDD2AB0D313006AA0BF /* Models */,
+				CCD09EDE2AB0D325006AA0BF /* Service */,
 				CCD09EAB2AB0D244006AA0BF /* AppDelegate.swift */,
 				CCD09EAD2AB0D244006AA0BF /* SceneDelegate.swift */,
-				CCD09EAF2AB0D244006AA0BF /* ViewController.swift */,
 				CCD09EB12AB0D244006AA0BF /* Main.storyboard */,
 				CCD09EB42AB0D248006AA0BF /* Assets.xcassets */,
 				CCD09EB62AB0D248006AA0BF /* LaunchScreen.storyboard */,
@@ -114,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD09EC22AB0D248006AA0BF /* InfiniteScrollTests.swift */,
+				CC5B2BAD2AB195000035AF67 /* VideoViewModelTests.swift */,
 			);
 			path = InfiniteScrollTests;
 			sourceTree = "<group>";
@@ -125,6 +142,47 @@
 				CCD09ECE2AB0D248006AA0BF /* InfiniteScrollUITestsLaunchTests.swift */,
 			);
 			path = InfiniteScrollUITests;
+			sourceTree = "<group>";
+		};
+		CCD09EDB2AB0D25A006AA0BF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CCD09EDF2AB0D36C006AA0BF /* VideoListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CCD09EDC2AB0D299006AA0BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCD09EE62AB0D6E7006AA0BF /* VideoTableViewCell.swift */,
+				CC5B2BA92AB18AF20035AF67 /* LoadingTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CCD09EDD2AB0D313006AA0BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCD09EE12AB0D416006AA0BF /* Video.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CCD09EDE2AB0D325006AA0BF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CCD09EE82AB0DC98006AA0BF /* VideoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CCD09EE52AB0D4D3006AA0BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCD09EE32AB0D4BA006AA0BF /* VideoViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD09EB02AB0D244006AA0BF /* ViewController.swift in Sources */,
+				CCD09EE92AB0DC98006AA0BF /* VideoService.swift in Sources */,
+				CCD09EE42AB0D4BA006AA0BF /* VideoViewModel.swift in Sources */,
+				CCD09EE02AB0D36C006AA0BF /* VideoListViewController.swift in Sources */,
+				CCD09EE22AB0D416006AA0BF /* Video.swift in Sources */,
+				CC5B2BAA2AB18AF20035AF67 /* LoadingTableViewCell.swift in Sources */,
 				CCD09EAC2AB0D244006AA0BF /* AppDelegate.swift in Sources */,
 				CCD09EAE2AB0D244006AA0BF /* SceneDelegate.swift in Sources */,
+				CCD09EE72AB0D6E7006AA0BF /* VideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5B2BAE2AB195000035AF67 /* VideoViewModelTests.swift in Sources */,
 				CCD09EC32AB0D248006AA0BF /* InfiniteScrollTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
